@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Infinity</title>
+    <link rel="stylesheet" href="../css/login.css" media="screen">
+    <link rel="icon" type="image/x-icon" href="../images/bolt.png">
+    <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../js/framescript.js" defer=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="../js/settings.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="content" align="center">
+
+        <div class="login-container">
+            <div class="login-background">
+
+            </div>
+            <div class="login-form">
+                <img src="../images/infinity.png" width="100"/>
+                <input class="w-100 mt-3" id="email" type="text" placeholder="Email" />
+                <input class="w-100" id="senha" type="password" placeholder="Senha" />
+                <div id="erro-login" class="u-text-personal-2"></div>
+                <button type="submit" class="w-50 btn-login" onclick="GetSession()">
+                    LOGIN
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        $(document).ready(function (event) {
+            sessionStorage.removeItem('authorize');
+
+            $(document).on('keypress', function (event) {
+                if (event.key === "Enter") {
+                    GetSession();
+                }
+            });
+
+        });
+
+        function GetSession() {
+
+            let email = document.querySelector("#email").value
+            let senha = document.querySelector("#senha").value
+
+            let request = {
+                email: email,
+                senha: senha
+            };
+
+            $.ajax({
+                url: `${url.local}/api/getClient`,
+                type: 'POST',
+                data: request,
+                success: function (data) {
+
+                    sessionStorage.setItem('authorize', data.authorization);
+                    window.location.href = data.redirect;
+
+                },
+                error: function (error) {
+                    document.getElementById('erro-login').textContent = 'Login ou senha inválidos!';
+                }
+            });
+
+            // $.ajax({
+            //     url: 'http://localhost:8000/api/getClient',
+            //     type: 'post',
+            //     data: request,
+            //     beforeSend: function () {
+            //         $("#resultado").html("ENVIANDO...");
+            //     }
+            // })..done(function (msg) {
+
+            //     console.log(msg)
+
+            //     if (msg !== undefined) {
+            //         // sessionStorage.setItem('usuario', msg);
+            //         // window.location.href = "home.html";
+            //     }
+            //     else {
+            //         document.getElementById('erro-login').textContent = 'Login ou senha inválidos!';
+            //     }
+
+            // }).fail(function (jqXHR, textStatus, msg) {
+
+            //     document.getElementById('erro-login').textContent = 'Login ou senha inválidos!';
+            //     console.log(textStatus)
+            //     console.log(msg)
+
+            // });
+        }
+
+    </script>
+
+</body>
+
+</html>

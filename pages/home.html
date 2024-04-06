@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="WhatsApp API &amp;amp; WhatsApp Functions">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Infinity</title>
+  <link rel="stylesheet" href="../css/style2.css" media="screen">
+  <link rel="stylesheet" href="../css/style.css" media="screen">
+  <link rel="icon" type="image/x-icon" href="../images/bolt.png">
+  <script class="u-script" type="text/javascript" src="../js/jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="../js/framescript.js" defer=""></script>
+  <script src="../js/settings.js"></script>
+  <meta name="generator" content="OPZ, opoderozozapao.com.br">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i|PT+Sans:400,400i,700,700i|Lalezar:400">
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "#"
+    }
+    </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="theme-color" content="#2e937a">
+  <meta property="og:title" content="Página Inicial">
+  <meta property="og:type" content="website">
+</head>
+
+<body data-home-page="Página-Inicial.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode">
+  <header class="u-clearfix u-header u-header" id="sec-84ba">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <br>
+      <br>
+      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" data-responsive-from="XL">
+        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; font-weight: 500;" wfd-invisible="true">
+          <a class="u-button-style u-custom-active-color u-custom-border u-custom-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base"
+            href="#">
+            <svg class="u-svg-link" viewBox="0 0 24 24">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use>
+            </svg>
+            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <g>
+                <rect y="1" width="16" height="2"></rect>
+                <rect y="7" width="16" height="2"></rect>
+                <rect y="13" width="16" height="2"></rect>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="u-nav-container" wfd-invisible="true">
+          <ul class="u-nav u-spacing-2 u-unstyled u-nav-1">
+            <li class="u-nav-item"><a
+                class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                href="#inicio" style="padding: 10px 20px;">Página Inicial</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                href="#app" style="padding: 10px 20px;">API Gratuita</a>
+            </li>
+            <li class="u-nav-item"><a
+                class="u-active-grey-5 u-button-style u-hover-grey-10 u-nav-link u-text-active-grey-90 u-text-grey-90 u-text-hover-grey-90"
+                href="#mensagem" style="padding: 10px 20px;">mensagem</a>
+            </li>
+          </ul>
+        </div>
+        <div class="u-nav-container-collapse" wfd-invisible="true">
+          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-inner-container-layout u-sidenav-overflow">
+              <div style="cursor: pointer;" class="u-menu-close"></div>
+              <ul class="u-align-left u-nav u-popupmenu-items u-unstyled u-nav-2">
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#inicio"
+                    style="padding: 10px 20px;">Página Inicial</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#app"
+                    style="padding: 10px 20px;">Conexão</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#mensagem"
+                    style="padding: 10px 20px;">Mensagens</a>
+                </li>
+                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="./"
+                    style="padding: 10px 20px;">Sair</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70" wfd-invisible="true"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-palette-3-light-2 u-section-1" id="inicio">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div class="u-clearfix u-expanded-width-sm u-expanded-width-xs u-gutter-0 u-layout-wrap u-layout-wrap-1">
+        <div class="u-gutter-0 u-layout">
+          <div class="u-layout-row">
+            <div
+              class="u-align-left u-container-style u-layout-cell u-size-30 u-white u-layout-cell-1 u-top-left-radius-10 u-bottom-left-radius-10">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <h6 class="u-text u-text-default u-text-grey-50 u-text-1">Infinity operating system</h6>
+                <h2 class="u-custom-font u-font-source-sans-pro u-text u-text-2">Infinity</h2>
+                <ul class="u-custom-list u-text u-text-3">
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 415.994 415.994" id="svg-aeac"
+                        style="font-size: 0.5em; margin: -0.5em;">
+                        <path
+                          d="m391.645 193.946-352-192c-4.96-2.688-10.976-2.592-15.808.288-4.864 2.88-7.84 8.128-7.84 13.76v384c0 5.664 2.976 10.88 7.84 13.76 2.496 1.504 5.344 2.24 8.16 2.24 2.656 0 5.28-.672 7.648-1.984l352-192c5.152-2.752 8.352-8.16 8.352-14.016s-3.2-11.264-8.352-14.048z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div> 100% Funcional
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 415.994 415.994" id="svg-aeac"
+                        style="font-size: 0.5em; margin: -0.5em;">
+                        <path
+                          d="m391.645 193.946-352-192c-4.96-2.688-10.976-2.592-15.808.288-4.864 2.88-7.84 8.128-7.84 13.76v384c0 5.664 2.976 10.88 7.84 13.76 2.496 1.504 5.344 2.24 8.16 2.24 2.656 0 5.28-.672 7.648-1.984l352-192c5.152-2.752 8.352-8.16 8.352-14.016s-3.2-11.264-8.352-14.048z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>Envie mensagens para todas as pessoas sem limites
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 415.994 415.994" id="svg-aeac"
+                        style="font-size: 0.5em; margin: -0.5em;">
+                        <path
+                          d="m391.645 193.946-352-192c-4.96-2.688-10.976-2.592-15.808.288-4.864 2.88-7.84 8.128-7.84 13.76v384c0 5.664 2.976 10.88 7.84 13.76 2.496 1.504 5.344 2.24 8.16 2.24 2.656 0 5.28-.672 7.648-1.984l352-192c5.152-2.752 8.352-8.16 8.352-14.016s-3.2-11.264-8.352-14.048z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>Acelere sua divulgação
+                  </li>
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 415.994 415.994" id="svg-aeac"
+                        style="font-size: 0.5em; margin: -0.5em;">
+                        <path
+                          d="m391.645 193.946-352-192c-4.96-2.688-10.976-2.592-15.808.288-4.864 2.88-7.84 8.128-7.84 13.76v384c0 5.664 2.976 10.88 7.84 13.76 2.496 1.504 5.344 2.24 8.16 2.24 2.656 0 5.28-.672 7.648-1.984l352-192c5.152-2.752 8.352-8.16 8.352-14.016s-3.2-11.264-8.352-14.048z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>Suporte para chat bot
+                  </li>
+
+                  <li>
+                    <div class="u-list-icon u-text-palette-2-base">
+                      <svg class="u-svg-content" viewBox="0 0 415.994 415.994" id="svg-aeac"
+                        style="font-size: 0.5em; margin: -0.5em;">
+                        <path
+                          d="m391.645 193.946-352-192c-4.96-2.688-10.976-2.592-15.808.288-4.864 2.88-7.84 8.128-7.84 13.76v384c0 5.664 2.976 10.88 7.84 13.76 2.496 1.504 5.344 2.24 8.16 2.24 2.656 0 5.28-.672 7.648-1.984l352-192c5.152-2.752 8.352-8.16 8.352-14.016s-3.2-11.264-8.352-14.048z"
+                          fill="currentColor"></path>
+                      </svg>
+                    </div>Leia o QRCode e comece a usar
+                  </li>
+                </ul>
+                <button href="#app"
+                  class="u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-btn-1">INICIAR
+                </button>
+              </div>
+            </div>
+            <div
+              class="u-container-style u-layout-cell u-palette-3-light-3 u-shape-rectangle u-size-30 u-layout-cell-2 u-top-right-radius-10 u-bottom-right-radius-10">
+              <div class="u-container-layout u-valign-bottom u-container-layout-2">
+                <img class="u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-image u-image-1"
+                  src="images/cv-min.png" data-image-width="617" data-image-height="723">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-palette-3-light-2 u-section-2" id="app">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+      <div id="app">
+        <img src="" alt="QR Code" id="qrcode">
+        <p class="u-text-personal-2">Logs de Conexão:</p>
+        <p class="logs"></p>
+      </div>
+      <p class="u-text u-text-2">
+        <button href="#mensagem"
+          class="u-active-grey-80 u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-btn-1">Enviar
+          Mensagens</button>
+      </p>
+    </div>
+  </section>
+  <section class="u-align-left u-clearfix u-section-3" id="mensagem">
+    <div class="u-clearfix u-sheet u-valign-top-md u-sheet-1">
+      <div class="u-container-layout u-valign-middle u-container-layout-1">
+
+        <label for="" class="u-text-personal">Número</label>
+        <input style="padding: 3px 7px;" id="numeros" type="text">
+
+        <div style="display: flex; align-items: center;">
+          <button onclick="SalvarContato()"
+            class="u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal">Salvar
+            número
+          </button>
+          <button id="contatos" onclick="VerContatos()"
+            class="ml-4 u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal">Ver
+            contatos
+          </button>
+          
+          <div class="ml-5 font-weight-bold">
+            <!-- <p style="color: #2E937A;" id="contatos">
+              
+            </p> -->
+          </div>
+        </div>
+
+        <!-- Modal de números  -->
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+          <div class="modal-header">
+            <h4>Meus Contatos</h4>
+            <!-- <div style="margin-left: 10px;">
+              <div style="justify-content: start; align-items: center;">
+                  <span style="position:absolute; color: white; margin: 4px 4px 4px 8px;"><img style="width: 20px;" src="/images/lupa.ico" /></span>
+                  <input id="inputValue" style="border-radius: 4px; max-width: 185px; padding-left: 30px; height: 34px; border:1px solid #CCC" onkeyup="ConsultarNumeros(event)" class="form" placeholder="Pesquisar" />
+                  <input style="" onclick="ConsultarFiltro(event)" type="button" value="Ir" />
+              </div>
+          </div> -->
+            <a id="excluir-tudo-modal" onclick="ExcluirContatos()">Excluir tudo</a>
+            <a id="close-modal">Fechar</a>
+          </div>
+
+          <div id="saved-numbers" class="modal-body unselectable">
+
+          </div>
+
+        </div>
+
+        <!-- Modal de Grupos  -->
+        <div id="fade2" class="hide"></div>
+        <div id="modal2" class="hide">
+          <div class="modal-header">
+            <h4>Meus Grupos</h4>
+
+            <a id="close-modal2">Fechar</a>
+          </div>
+          <div id="contatos-extraidos" class="total-hide"></div>
+          <div id="groups" class="modal-body">
+            <p id="group"></p>
+          </div>
+
+        </div>
+
+        <div style="display: flex; align-items: center;">
+          
+          <button id="link-grupos" onclick="VerGrupos()"
+            class="u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal">Extrair Grupos
+            <div class="spinner total-hide"></div>
+          </button>
+
+          <input type="file" id="fileXlsx" hidden="hidden" onchange="uploadXlsx()" value="Selecionar xlsx" />
+          <!-- Crie um botão personalizado -->
+          <button type="button" id="custom-button-xlsx"
+            class="ml-4 u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal">
+            IMPORTAR PLANILHA
+          </button>
+          <!-- Crie um span para exibir o nome do arquivo selecionado -->
+          <span id="custom-text-xlsx" class="ml-3">
+            Nenhuma planilha escolhida, ainda.
+          </span>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="u-container-layout u-valign-middle u-container-layout-1">
+        <!-- <label for="" class="u-text-personal">URL da imagem</label> -->
+
+        <div style="display: flex; align-items: center;">
+          <input type="file" id="file" hidden="hidden" onchange="uploadImage()" value="Selecionar imagem" />
+          <!-- Crie um botão personalizado -->
+          <button type="button" id="custom-button"
+            class="u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal">
+            SELECIONAR IMAGEM
+          </button>
+          <!-- Crie um span para exibir o nome do arquivo selecionado -->
+          <span id="custom-text" class="ml-3">
+            Nenhuma imagem escolhida, ainda.
+          </span>
+        </div>
+
+        <!-- <input id="img-path" type="text" placeholder="Colar URL"> -->
+        <!-- <a onclick="VisualizarImagem()"
+          class="u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal">
+          Visualizar Imagem
+        </a> -->
+
+        <div id="imagePreview" style="padding-top: 20px;">
+          <img id="img-preview" src="" width="400">
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="u-container-layout u-valign-middle u-container-layout-1">
+        <label id="label-message" class="u-text-personal">
+          <span>Mensagem</span>
+          <span id="delmsg" title="Excluir Mensagem"
+            style="color: red; display: none; font-weight: bold; cursor: pointer; float: right;"
+            onclick="ExcluirMensagem()"> X </span>
+        </label>
+        <textarea id="text-msg" class="feed-post" rows="4" cols="50" placeholder="Escreva sua mensagem"></textarea>
+        <div class="container row pt-3">
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😁</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😂</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😃</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😄</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😅</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😆</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😉</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😎</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😊</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😋</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😌</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😍</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😏</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😒</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😓</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😔</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😖</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😘</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😚</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😜</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😝</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😞</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😠</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😢</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😤</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😥</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😨</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😩</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😪</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😫</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😭</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😰</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😱</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😲</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😳</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😵</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😷</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😸</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😹</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😺</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😻</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😼</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😽</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😾</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">😿</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙀</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙅</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙆</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙇</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙈</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙉</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙊</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙋</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙌</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙍</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙎</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🙏</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">👌</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">💕</button>
+          <button type="button" class="m-1 bg-light btn btn-lg emojis">🚀</button>
+        </div>
+        <div class="container row">
+          <button onclick="EnviarMensagem()"
+            class="u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal mr-5">Enviar
+          </button>
+          <button onclick="EnviarMensagemMedia()"
+            class="u-active-grey-80 u-border-none u-btn u-btn-round u-button-style u-hover-grey-80 u-palette-1-base u-radius-10 u-personal">Enviar
+            com Imagem
+          </button>
+          <div class="ml-5 font-weight-bold">
+            <p style="color: #198754; font-size: 20px;" id="status-envio-aceito">
+
+            </p>
+            <p style="color: #DC3545; font-size: 20px;" id="status-envio-rejeitado">
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-21de">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1"><a href="">© Infinity</a></p>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>
